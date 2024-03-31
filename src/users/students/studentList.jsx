@@ -11,6 +11,7 @@ export const StudentList = () => {
         <li>{elem.surname}</li>
         <li>{elem.age}</li>
         <li>{elem.speciality}</li>
+        <hr/>
       </>
     );
   });
@@ -18,7 +19,6 @@ export const StudentList = () => {
     <div>
       <h2>student</h2>
       <ul> {userStudent} </ul>
-      {console.log(userStudent)}
     </div>
   );
 };

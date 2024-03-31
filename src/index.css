@@ -40,3 +40,16 @@ a:hover{
 	border-right: 2px solid lightgray;
 	font-weight: bold;
 }
+form {
+	margin-bottom: 20px;
+	border-bottom: 2px solid lightgray;
+	padding-bottom: 10px;
+}
+
+form p {
+	margin: 5px;
+}
+h2{
+	color: orange;
+	opacity: 0.5;
+}

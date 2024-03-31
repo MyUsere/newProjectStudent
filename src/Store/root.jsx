@@ -1,5 +1,6 @@
 
 import { StudentList } from "../users/students/studentList"
+import { NewStudentForm } from "../users/students/NewStudentForm"
 function Root() {
 	return (
 		<div id="main">
@@ -14,6 +15,7 @@ function Root() {
 				<hr></hr>
 			
 				<StudentList/>
+				<NewStudentForm/>
 			</div>
 		</div>
 	)

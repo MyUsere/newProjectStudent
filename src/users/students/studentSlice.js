@@ -1,7 +1,7 @@
  
  import { createSlice } from "@reduxjs/toolkit";
  import { nanoid } from "@reduxjs/toolkit";
- function id(){
+ export function id(){
   return nanoid(10)
  }
 const initialState = [
@@ -23,7 +23,10 @@ const initialState = [
 const studentSlice = createSlice({
   name: "Student",
   initialState,
-  reducers: {},
+  reducers: {
+  
+  },
 });
+
 
 export default studentSlice.reducer;
