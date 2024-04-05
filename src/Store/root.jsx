@@ -13,9 +13,9 @@ function Root() {
 			<div id="main_page">
 				<h2>редукс-тоолкит</h2>
 				<hr></hr>
-			
-				<StudentList/>
 				<NewStudentForm/>
+				<StudentList/>
+				
 			</div>
 		</div>
 	)

@@ -3,22 +3,21 @@ import { useSelector } from "react-redux";
 export const StudentList = () => {
   const user = useSelector((state) => state.Student);
 
-  const userStudent = user.map((elem) => {
-    return (
-      <>
-        <li key={elem.id}>{elem.id}</li>
-        <li>{elem.name}</li>
-        <li>{elem.surname}</li>
-        <li>{elem.age}</li>
-        <li>{elem.speciality}</li>
-        <hr/>
-      </>
-    );
-  });
+  const userStudent = user.map((elem) => (
+    <div key={elem.id}>
+      <p>{elem.name}</p>
+      <p>{elem.surname}</p>
+      <p>{elem.age}</p>
+      <p>{elem.speciality}</p>
+      <hr/>
+    </div>
+    
+  ));
+
   return (
     <div>
       <h2>student</h2>
-      <ul> {userStudent} </ul>
+      {userStudent}
     </div>
   );
 };
