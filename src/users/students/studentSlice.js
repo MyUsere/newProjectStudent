@@ -25,7 +25,9 @@ const studentSlice = createSlice({
   initialState,
   reducers: {
   studentAdd(state,action){
+   
     state.push(action.payload)
+    console.log(action.payload)
   }
   },
 });

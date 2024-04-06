@@ -25,7 +25,8 @@ export const NewStudentForm = ()=>{
   const onSpecialityChandle = (e)=>{
     setSpeciality(e.target.value)
   }
-  const saveStudent = ()=>{
+  const saveStudent = (e)=>{
+    e.preventDefault();
     if(name&&surname&&age&&speciality){
       dispatch(
         studentAdd({
