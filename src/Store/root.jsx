@@ -1,6 +1,5 @@
 
-import { StudentList } from "../users/students/studentList"
-import { NewStudentForm } from "../users/students/NewStudentForm"
+import {Outlet} from 'react-router-dom';
 function Root() {
 	return (
 		<div id="main">
@@ -13,8 +12,7 @@ function Root() {
 			<div id="main_page">
 				<h2>редукс-тоолкит</h2>
 				<hr></hr>
-				<NewStudentForm/>
-				<StudentList/>
+				<Outlet/>
 				
 			</div>
 		</div>
